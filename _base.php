@@ -1,0 +1,1 @@
+<?php define('BASE_URL', 'C:\Users\merda\OneDrive\Ambiente de Trabalho\RuneScape Deck\WEB'); ?>
