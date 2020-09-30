@@ -1,4 +1,8 @@
 header {
+	display: flex;
+	flex-direction: column;
+	
+	justify-content: center;
 	height: 70vh;
     background: url(../images/deck-packaging.png);
     background-repeat: no-repeat;
