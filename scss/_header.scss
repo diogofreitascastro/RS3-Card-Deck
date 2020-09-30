@@ -4,9 +4,8 @@ header {
 	height: 80vh;
     background: url(../images/deck-packaging.png);
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top;
-    background-size: 800px;
+    background-size: cover;
+    background-position: center;
     @include mediumScreen {
     	height: 60vh;
 	    background-size: contain;

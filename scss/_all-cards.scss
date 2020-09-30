@@ -1,11 +1,11 @@
 main {
 	.cards-wrapper {
-		margin: 0px 20px;
+		margin: 20px 20px;
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		grid-gap: 10px;
 		@include mediumScreen {
-			margin: 0px 40px;
+			margin: 40px 40px;
 			grid-template-columns: repeat(13, 1fr);
 		}
 		@include xlargeScreen {
