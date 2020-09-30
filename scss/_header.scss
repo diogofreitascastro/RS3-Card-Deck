@@ -8,11 +8,9 @@ header {
     background-position: top;
     background-size: 800px;
     @include mediumScreen {
+    	height: 60vh;
 	    background-size: contain;
 	    background-position: top right;
-	}
-	@include largeScreen {
-		height: 80vh;
 	}
 	@include xlargeScreen {
 		height: 100vh;
