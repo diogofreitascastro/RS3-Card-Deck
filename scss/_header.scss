@@ -1,6 +1,18 @@
 header {
-	height: 100vh;
-	background: url(../images/deck-packaging.png);
-	background-size: cover;
-	background-position: 43% 10%;
+	height: 70vh;
+    background: url(../images/deck-packaging.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    background-size: 800px;
+    @include mediumScreen {
+	    background-size: contain;
+	    background-position: top right;
+	}
+	@include largeScreen {
+		height: 80vh;
+	}
+	@include xlargeScreen {
+		height: 100vh;
+	}
 }
