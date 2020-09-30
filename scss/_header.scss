@@ -1,7 +1,5 @@
 header {
 	display: flex;
-	flex-direction: column;
-	
 	justify-content: center;
 	height: 70vh;
     background: url(../images/deck-packaging.png);
@@ -18,5 +16,31 @@ header {
 	}
 	@include xlargeScreen {
 		height: 100vh;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Cinzel', serif;
+		margin: 0;
+	}
+
+	#main-title {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		h3 {
+			font-size: 5vw;
+		}
+
+		h1 {
+			font-size: 7vw;
+			font-weight: 600;
+		}
+
+		h5 {
+			font-size: 3vw;
+			font-style: italic;
+		}
 	}
 }
