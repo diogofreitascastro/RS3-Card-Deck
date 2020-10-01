@@ -1,21 +1,16 @@
 main {
-	.section-odd-even:nth-child(odd) {
-		background: #262626;
-		padding: 40px 10px;
+	.section-odd-even {
+		margin: 0 10px;
+		padding: 60px 0;
+		border-bottom: 1px solid #333333;
 
 		@include mediumScreen {
-			padding-top: 60px;
-			padding-bottom: 60px;
+			margin: 0 auto;
+			max-width: 1000px;
 		}
-	}
 
-	.section-odd-even:nth-child(even) {
-		background: #222222;
-		padding: 40px 10px;
-
-		@include mediumScreen {
-			padding-top: 60px;
-			padding-bottom: 60px;
+		&:last-child {
+			border: none;
 		}
 	}
 

@@ -28,7 +28,7 @@ main {
 			position: relative;
 
 			&.hidden-start {
-				visibility: hidden;
+				display: none;
 			}
 
 			.triangle {
@@ -56,12 +56,12 @@ main {
 		}
 
 		.chosen-suit {
-			margin: 20px auto 100px;
+			margin: 20px auto 0;
 			display: grid;
 			grid-template-columns: repeat(4, 1fr);
 			grid-gap: 10px;
 			@include mediumScreen {
-				margin: 40px auto 40px;
+				margin: 40px auto 0;
 				grid-template-columns: repeat(6, 1fr);
 				grid-gap: 20px;
 			}
