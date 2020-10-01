@@ -1,0 +1,25 @@
+main {
+	.section-odd-even:nth-child(odd) {
+		background: #333333;
+		padding: 80px 0;
+	}
+
+	.section-odd-even:nth-child(even) {
+		background: #222222;
+		padding: 80px 0;
+	}
+
+	.concept {
+		max-width: 800px;
+		margin: auto;
+
+		p {
+			font-weight: 100;
+			letter-spacing: 1px;
+			font-style: italic;
+			font-family: 'Cinzel', serif;
+			font-size: 2em;
+			text-align: center;
+		}
+	}
+}

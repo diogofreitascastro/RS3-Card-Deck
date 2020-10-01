@@ -2,6 +2,7 @@
 @import "variables-and-mixins";
 @import "rwd-queries";
 @import "header";
+@import "main";
 @import "all-cards";
 
 /* GENERAL STUFF */
@@ -13,8 +14,10 @@
 	color: $text-color;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
 	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
 }
 
 a, i, p {

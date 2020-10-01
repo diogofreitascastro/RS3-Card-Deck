@@ -1,98 +1,83 @@
 main {
-	margin: 20px 20px;
-	.cards-wrapper {
-		margin: 0px 20px 20px;
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		grid-gap: 10px;
-		@include mediumScreen {
-			margin: 40px 40px;
-			grid-template-columns: repeat(13, 1fr);
-		}
-		@include xlargeScreen {
-			grid-template-columns: repeat(13, 1fr);
-			grid-gap: 20px;
-		}
-
-		@include card-3d;
-	}
-
-	.suit-picker {
-		margin: 20px auto 10px;
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		grid-gap: 10px;
+	.deck-preview-wrapper {
 		max-width: 800px;
-		@include mediumScreen {
-			grid-gap: 20px;
-			margin: 40px auto 10px;
-		}
-		@include xlargeScreen {
-			grid-gap: 20px;
-		}
-
-		@include card-3d;
-	}
-
-	.selected-arrow-wrapper {
 		margin: auto;
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		grid-gap: 10px;
-		max-width: 800px;
-		position: relative;
 
-		&.hidden-start {
-			visibility: hidden;
+		.suit-picker {
+			margin: 20px auto 10px;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-gap: 10px;
+			@include mediumScreen {
+				grid-gap: 20px;
+				margin: 40px auto 10px;
+			}
+			@include xlargeScreen {
+				grid-gap: 20px;
+			}
+
+			@include card-3d;
 		}
 
-		.triangle {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			font-size: 1.5em;
+		.selected-arrow-wrapper {
+			margin: auto;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-gap: 10px;
 
+			position: relative;
+
+			&.hidden-start {
+				visibility: hidden;
+			}
+
+			.triangle {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 1.5em;
+
+				@include mediumScreen {
+					font-size: 2em;
+				}
+
+				@include largeScreen {
+					font-size: 3em;
+				}
+
+				> * {
+					color: #8e8e8e;
+				}
+
+				&.hidden {
+					visibility: hidden;
+				}
+			}
+		}
+
+		.chosen-suit {
+			margin: 20px auto 100px;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-gap: 10px;
 			@include mediumScreen {
-				font-size: 2em;
+				margin: 40px auto 40px;
+				grid-template-columns: repeat(6, 1fr);
+				grid-gap: 20px;
 			}
-
-			@include largeScreen {
-				font-size: 3em;
-			}
-
-			> * {
-				color: #8e8e8e;
+			@include xlargeScreen {
+				grid-gap: 20px;
 			}
 
 			&.hidden {
+				display: none;
+			}
+
+			&.hidden-start {
 				visibility: hidden;
 			}
-		}
-	}
 
-	.chosen-suit {
-		margin: 20px auto 100px;
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		grid-gap: 10px;
-		max-width: 800px;
-		@include mediumScreen {
-			margin: 40px auto 40px;
-			grid-template-columns: repeat(6, 1fr);
-			grid-gap: 20px;
+			@include card-3d;
 		}
-		@include xlargeScreen {
-			grid-gap: 20px;
-		}
-
-		&.hidden {
-			display: none;
-		}
-
-		&.hidden-start {
-			visibility: hidden;
-		}
-
-		@include card-3d;
 	}
 }
