@@ -21,11 +21,16 @@ main {
 
 		.selected-arrow-wrapper {
 			margin: auto;
+			margin-top: -10px;
 			display: grid;
 			grid-template-columns: repeat(4, 1fr);
 			grid-gap: 10px;
-
 			position: relative;
+			z-index: -1;
+
+			@include mediumScreen {
+				margin-top: 0;
+			}
 
 			&.hidden-start {
 				display: none;
@@ -56,7 +61,7 @@ main {
 		}
 
 		.chosen-suit {
-			margin: 20px auto 0;
+			margin: 10px auto 0;
 			display: grid;
 			grid-template-columns: repeat(4, 1fr);
 			grid-gap: 10px;
