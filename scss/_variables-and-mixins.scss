@@ -1,2 +1,44 @@
 /* VARIABLES */
 $text-color: #fff;
+
+/* MIXING */
+@mixin card-3d {
+	.single-card {
+		background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 3%, rgba(255, 255, 255, 0)) #222222;
+		position: relative;
+		border-radius: 5%;
+		transform: perspective(750px);
+		transition: 0.1s ease;
+		cursor: pointer;
+
+		&::after {
+		    content: '';
+		    position: absolute;
+		    left: 0;
+		    top: 0;
+		    width: 100%;
+		    height: 100%;
+		    border-radius: 5%;
+
+		    box-shadow: 0 30px 60px -8px rgba(0, 0, 0, .5),
+       		0 18px 36px -10px rgba(0, 0, 0, .4),
+       		0 -12px 36px -6px rgba(0, 0, 0, .2);
+		    transition: .4s ease;
+		    opacity: .3;
+		}
+
+		&.unselected {
+			img {
+				opacity: 0.5;
+			}
+		}
+	}
+
+	.card-hover {
+	    transition-duration: .1s;
+
+	    &::after {
+		    opacity: .8;
+		}
+	}
+}

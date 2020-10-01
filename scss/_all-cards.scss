@@ -1,6 +1,7 @@
 main {
+	margin: 20px 20px;
 	.cards-wrapper {
-		margin: 20px 20px;
+		margin: 0px 20px 20px;
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		grid-gap: 10px;
@@ -13,49 +14,85 @@ main {
 			grid-gap: 20px;
 		}
 
-		.single-card {
-			background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 3%, rgba(255, 255, 255, 0)) #222222;
-			position: relative;
-			border-radius: 5%;
-			transform: perspective(750px);
-			transition: 0.1s ease;
-			cursor: pointer;
+		@include card-3d;
+	}
 
-			&::after {
-			    content: '';
-			    position: absolute;
-			    left: 0;
-			    top: 0;
-			    width: 100%;
-			    height: 100%;
-			    border-radius: 5%;
-
-			    box-shadow: 0 30px 60px -8px rgba(0, 0, 0, .5),
-        		0 18px 36px -10px rgba(0, 0, 0, .4),
-        		0 -12px 36px -6px rgba(0, 0, 0, .2);
-			    transition: .4s ease;
-			    opacity: .3;
-			}
-
-			/*.gradient {
-				background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 3%, rgba(255, 255, 255, 0) 60%);
-				position: absolute;
-				top: -100%;
-				left: 0%;
-				width: 200%;
-				height: 200%;
-				content: '';
-				z-index: -1;
-				transition: top 1s ease-out,left 1s ease-out;
-			}*/
+	.suit-picker {
+		margin: 20px auto 10px;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 10px;
+		max-width: 800px;
+		@include mediumScreen {
+			grid-gap: 20px;
+			margin: 40px auto 10px;
+		}
+		@include xlargeScreen {
+			grid-gap: 20px;
 		}
 
-		.card-hover {
-		    transition-duration: .1s;
+		@include card-3d;
+	}
 
-		    &::after {
-			    opacity: .8;
+	.selected-arrow-wrapper {
+		margin: auto;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 10px;
+		max-width: 800px;
+		position: relative;
+
+		&.hidden-start {
+			visibility: hidden;
+		}
+
+		.triangle {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 1.5em;
+
+			@include mediumScreen {
+				font-size: 2em;
+			}
+
+			@include largeScreen {
+				font-size: 3em;
+			}
+
+			> * {
+				color: #8e8e8e;
+			}
+
+			&.hidden {
+				visibility: hidden;
 			}
 		}
+	}
+
+	.chosen-suit {
+		margin: 20px auto 100px;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 10px;
+		max-width: 800px;
+		@include mediumScreen {
+			margin: 40px auto 40px;
+			grid-template-columns: repeat(6, 1fr);
+			grid-gap: 20px;
+		}
+		@include xlargeScreen {
+			grid-gap: 20px;
+		}
+
+		&.hidden {
+			display: none;
+		}
+
+		&.hidden-start {
+			visibility: hidden;
+		}
+
+		@include card-3d;
 	}
 }

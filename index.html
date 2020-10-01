@@ -14,11 +14,36 @@
             </div>
         </header>
         <main>
-            <div class="cards-wrapper grid-x">
-                <!-- DIAMONDS -->
-                <div class="single-card">
+
+            <div class="suit-picker">
+                <div class="single-card suit-toggle" id="diamonds">
                     <img src="images/card_Ace-diamonds-nobg.png"/>
                 </div>
+                <div class="single-card suit-toggle" id="clubs">
+                    <img src="images/card_Ace-clubs-nobg.png"/>
+                </div>
+                <div class="single-card suit-toggle" id="hearts">
+                    <img src="images/card_Ace-hearts-nobg.png"/>
+                </div>
+                <div class="single-card suit-toggle" id="spades">
+                    <img src="images/card_Ace-spades-nobg.png"/>
+                </div>
+            </div>
+            <div class="selected-arrow-wrapper hidden-start">
+                <div class="triangle" id="triangle-diamonds">
+                    <i class="fas fa-caret-up"></i>
+                </div>
+                <div class="triangle" id="triangle-clubs">
+                    <i class="fas fa-caret-up"></i>
+                </div>
+                <div class="triangle" id="triangle-hearts">
+                    <i class="fas fa-caret-up"></i>
+                </div>
+                <div class="triangle" id="triangle-spades">
+                    <i class="fas fa-caret-up"></i>
+                </div>
+            </div>
+            <div class="chosen-suit hidden-start" id="chosen-diamonds">
                 <div class="single-card">
                     <img src="images/card_2-diamonds-nobg.png"/>
                 </div>
@@ -55,10 +80,9 @@
                 <div class="single-card">
                     <img src="images/card_King-diamonds-nobg.png"/>
                 </div>
-                <!-- CLUBS -->
-                <div class="single-card">
-                    <img src="images/card_Ace-clubs-nobg.png"/>
-                </div>
+            </div>
+
+                <div class="chosen-suit hidden" id="chosen-clubs">
                 <div class="single-card">
                     <img src="images/card_2-clubs-nobg.png"/>
                 </div>
@@ -95,10 +119,9 @@
                 <div class="single-card">
                     <img src="images/card_King-clubs-nobg.png"/>
                 </div>
-                <!-- HEARTS -->
-                <div class="single-card">
-                    <img src="images/card_Ace-hearts-nobg.png"/>
-                </div>
+            </div>
+
+                <div class="chosen-suit hidden" id="chosen-hearts">
                 <div class="single-card">
                     <img src="images/card_2-hearts-nobg.png"/>
                 </div>
@@ -135,10 +158,9 @@
                 <div class="single-card">
                     <img src="images/card_King-hearts-nobg.png"/>
                 </div>
-                <!-- SPADES -->
-                <div class="single-card">
-                    <img src="images/card_Ace-spades-nobg.png"/>
-                </div>
+            </div>
+
+                <div class="chosen-suit hidden" id="chosen-spades">
                 <div class="single-card">
                     <img src="images/card_2-spades-nobg.png"/>
                 </div>
@@ -175,16 +197,11 @@
                 <div class="single-card">
                     <img src="images/card_King-spades-nobg.png"/>
                 </div>
-                <!-- JOKER -->
-                <div class="single-card">
-                    <img src="images/card_Joker.png"/>
-                </div>
-                <div class="single-card">
-                    <img src="images/card_Joker.png"/>
-                </div>
             </div>
         </main>
-        <footer></footer>
+        <footer>
+            
+        </footer>
         <!-- SCRIPTS -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="js/jquery.js"></script>
