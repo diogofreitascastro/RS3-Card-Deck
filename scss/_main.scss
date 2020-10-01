@@ -1,12 +1,22 @@
 main {
 	.section-odd-even:nth-child(odd) {
 		background: #333333;
-		padding: 80px 0;
+		padding: 40px 10px;
+
+		@include mediumScreen {
+			padding-top: 60px;
+			padding-bottom: 60px;
+		}
 	}
 
 	.section-odd-even:nth-child(even) {
 		background: #222222;
-		padding: 80px 0;
+		padding: 40px 10px;
+
+		@include mediumScreen {
+			padding-top: 60px;
+			padding-bottom: 60px;
+		}
 	}
 
 	.concept {
@@ -18,8 +28,16 @@ main {
 			letter-spacing: 1px;
 			font-style: italic;
 			font-family: 'Cinzel', serif;
-			font-size: 2em;
+			font-size: 1em;
 			text-align: center;
+
+			@include mediumScreen {
+				font-size: 1.5em;
+			}
+
+			@include largeScreen {
+				font-size: 2em;
+			}
 		}
 	}
 }
