@@ -1,11 +1,11 @@
 header {
 	display: flex;
 	justify-content: center;
-	height: 100vh;
+	height: 200px;
     background: url(../images/deck-packaging.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-position: top right;
     @include mediumScreen {
     	height: 60vh;
 	    background-size: contain;
