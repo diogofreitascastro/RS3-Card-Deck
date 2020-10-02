@@ -6,6 +6,11 @@ main {
 
 		@include mediumScreen {
 			margin: 0 auto;
+			max-width: 600px
+		}
+
+		@include largeScreen {
+			margin: 0 auto;
 			max-width: 1000px;
 		}
 
@@ -27,11 +32,11 @@ main {
 			text-align: center;
 
 			@include mediumScreen {
-				font-size: 1.5em;
+				font-size: 1.2em;
 			}
 
 			@include largeScreen {
-				font-size: 2em;
+				font-size: 1.5em;
 			}
 		}
 	}

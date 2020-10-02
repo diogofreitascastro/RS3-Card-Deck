@@ -3,6 +3,21 @@ main {
 		max-width: 800px;
 		margin: auto;
 
+		.click-to-preview {
+			h1 {
+				font-size: 1em;
+				margin: 0;
+
+				@include mediumScreen {
+					font-size: 1.5em;
+				}
+
+				@include largeScreen {
+					font-size: 2em;
+				}
+			}
+		}
+
 		.suit-picker {
 			margin: 20px auto 10px;
 			display: grid;
@@ -66,7 +81,7 @@ main {
 			grid-template-columns: repeat(4, 1fr);
 			grid-gap: 10px;
 			@include mediumScreen {
-				margin: 40px auto 0;
+				margin: 20px auto 0;
 				grid-template-columns: repeat(6, 1fr);
 				grid-gap: 20px;
 			}
