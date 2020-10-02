@@ -28,20 +28,28 @@ main {
 			letter-spacing: 1px;
 			font-style: italic;
 			font-family: 'Cinzel', serif;
-			font-size: 1em;
+			font-size: .8em;
 			text-align: center;
 
 			@include mediumScreen {
-				font-size: 1.2em;
+				font-size: 1em;
 				text-align: justify;
+			}
+
+			@include largeScreen {
+				font-size: 1.2em;
 			}
 
 			&.signature {
 				margin-top: 10px;
-				font-size: .8em;
+				font-size: .6em;
 				text-align: right;
 
 				@include mediumScreen {
+					font-size: .8em;
+				}
+
+				@include largeScreen {
 					font-size: 1em;
 				}
 			}
