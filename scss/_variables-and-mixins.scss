@@ -4,7 +4,7 @@ $text-color: #fff;
 /* MIXING */
 @mixin card-3d {
 	.single-card {
-		background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 3%, rgba(255, 255, 255, 0)) #222222;
+		background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 3%, rgba(255, 255, 255, 0)) #181f21;
 		position: relative;
 		border-radius: 5%;
 		transform: perspective(750px);
