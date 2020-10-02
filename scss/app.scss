@@ -41,3 +41,26 @@ ol {
 body {
 	background: $bg-color;
 }
+
+/* SCROLL */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $bg-color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: lighten($bg-color, 20%);
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: lighten($bg-color, 30%);
+}
