@@ -2,7 +2,7 @@ main {
 	.section-odd-even {
 		margin: 0 30px;
 		padding: 60px 0;
-		border-bottom: 1px solid #2a373b;
+		border-bottom: 1px solid lighten($bg-color, 10%);
 
 		@include mediumScreen {
 			margin: 0 auto;

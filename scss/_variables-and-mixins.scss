@@ -1,10 +1,11 @@
 /* VARIABLES */
 $text-color: #fff;
+$bg-color: #181f21;
 
 /* MIXING */
 @mixin card-3d {
 	.single-card {
-		background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 3%, rgba(255, 255, 255, 0)) #181f21;
+		background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 3%, rgba(255, 255, 255, 0)) $bg-color;
 		position: relative;
 		border-radius: 5%;
 		transform: perspective(750px);
