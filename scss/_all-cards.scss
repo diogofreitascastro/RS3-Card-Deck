@@ -3,6 +3,8 @@ main {
 		max-width: 800px;
 		margin: auto;
 
+		@include card-3d; /* CARDS DESIGN */
+
 		.click-to-preview {
 			h1 {
 				font-size: 1em;
@@ -26,8 +28,6 @@ main {
 			@include xlargeScreen {
 				grid-gap: 20px;
 			}
-
-			@include card-3d;
 		}
 
 		.selected-arrow-wrapper {
@@ -92,8 +92,6 @@ main {
 			&.hidden-start {
 				visibility: hidden;
 			}
-
-			@include card-3d;
 		}
 	}
 }
