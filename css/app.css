@@ -1,2 +1,309 @@
-header{display:flex;justify-content:center;height:200px;background:url(../images/deck-packaging.png);background-repeat:no-repeat;background-size:contain;background-position:top right}@media (min-width: 768px){header{height:60vh;background-size:contain;background-position:top right}}@media (min-width: 1200px){header{height:100vh}}header h1,header h2,header h3,header h4,header h5,header h6{font-family:'Montserrat', sans-serif;margin:0}header #main-title{display:flex;justify-content:center;align-items:center;flex-direction:column}header #main-title h3{font-size:3vw;font-family:'Cinzel Decorative', cursive}header #main-title h1{font-size:7vw;font-weight:200;font-family:'Cinzel', cursive}header #main-title h5{font-size:3vw;font-style:italic;font-weight:100}main .section-odd-even{margin:0 30px;padding:60px 0;border-bottom:1px solid #2d3b3f}@media (min-width: 768px){main .section-odd-even{margin:0 auto;max-width:600px}}@media (min-width: 992px){main .section-odd-even{margin:0 auto;max-width:1000px}}main .section-odd-even:last-child{border:none}main .concept{max-width:800px;margin:auto}main .concept p{font-weight:100;letter-spacing:1px;font-style:italic;font-family:'Cinzel', serif;font-size:.8em;text-align:center}@media (min-width: 768px){main .concept p{font-size:1em;text-align:justify}}@media (min-width: 992px){main .concept p{font-size:1.2em}}main .concept p.signature{margin-top:10px;font-size:.6em;text-align:right}@media (min-width: 768px){main .concept p.signature{font-size:.8em}}@media (min-width: 992px){main .concept p.signature{font-size:1em}}main .deck-preview-wrapper{max-width:800px;margin:auto}main .deck-preview-wrapper .click-to-preview h1{font-size:1em;margin:0}@media (min-width: 768px){main .deck-preview-wrapper .click-to-preview h1{font-size:1.5em}}main .deck-preview-wrapper .suit-picker{margin:20px auto 10px;display:grid;grid-template-columns:repeat(4, 1fr);grid-gap:10px}@media (min-width: 768px){main .deck-preview-wrapper .suit-picker{grid-gap:20px;margin:40px auto 10px}}@media (min-width: 1200px){main .deck-preview-wrapper .suit-picker{grid-gap:20px}}main .deck-preview-wrapper .suit-picker .single-card{background:radial-gradient(circle, rgba(255,255,255,0.2) 3%, rgba(255,255,255,0)) #181f21;position:relative;border-radius:5%;transform:perspective(750px);transition:0.1s ease;cursor:pointer}main .deck-preview-wrapper .suit-picker .single-card::after{content:'';position:absolute;left:0;top:0;width:100%;height:100%;border-radius:5%;box-shadow:0 30px 60px -8px rgba(0,0,0,0.5),0 18px 36px -10px rgba(0,0,0,0.4),0 -12px 36px -6px rgba(0,0,0,0.2);transition:.4s ease;opacity:.3}main .deck-preview-wrapper .suit-picker .single-card.unselected img{opacity:0.5}main .deck-preview-wrapper .suit-picker .card-hover{transition-duration:.1s}main .deck-preview-wrapper .suit-picker .card-hover::after{opacity:.8}main .deck-preview-wrapper .selected-arrow-wrapper{margin:auto;margin-top:-10px;display:grid;grid-template-columns:repeat(4, 1fr);grid-gap:10px;position:relative;z-index:-1}@media (min-width: 768px){main .deck-preview-wrapper .selected-arrow-wrapper{margin-top:0}}main .deck-preview-wrapper .selected-arrow-wrapper.hidden-start{display:none}main .deck-preview-wrapper .selected-arrow-wrapper .triangle{display:flex;align-items:center;justify-content:center;font-size:1.5em}@media (min-width: 768px){main .deck-preview-wrapper .selected-arrow-wrapper .triangle{font-size:2em}}@media (min-width: 992px){main .deck-preview-wrapper .selected-arrow-wrapper .triangle{font-size:3em}}main .deck-preview-wrapper .selected-arrow-wrapper .triangle>*{color:#8e8e8e}main .deck-preview-wrapper .selected-arrow-wrapper .triangle.hidden{visibility:hidden}main .deck-preview-wrapper .chosen-suit{margin:10px auto 0;display:grid;grid-template-columns:repeat(4, 1fr);grid-gap:10px}@media (min-width: 768px){main .deck-preview-wrapper .chosen-suit{margin:20px auto 0;grid-template-columns:repeat(6, 1fr);grid-gap:20px}}@media (min-width: 1200px){main .deck-preview-wrapper .chosen-suit{grid-gap:20px}}main .deck-preview-wrapper .chosen-suit.hidden{display:none}main .deck-preview-wrapper .chosen-suit.hidden-start{visibility:hidden}main .deck-preview-wrapper .chosen-suit .single-card{background:radial-gradient(circle, rgba(255,255,255,0.2) 3%, rgba(255,255,255,0)) #181f21;position:relative;border-radius:5%;transform:perspective(750px);transition:0.1s ease;cursor:pointer}main .deck-preview-wrapper .chosen-suit .single-card::after{content:'';position:absolute;left:0;top:0;width:100%;height:100%;border-radius:5%;box-shadow:0 30px 60px -8px rgba(0,0,0,0.5),0 18px 36px -10px rgba(0,0,0,0.4),0 -12px 36px -6px rgba(0,0,0,0.2);transition:.4s ease;opacity:.3}main .deck-preview-wrapper .chosen-suit .single-card.unselected img{opacity:0.5}main .deck-preview-wrapper .chosen-suit .card-hover{transition-duration:.1s}main .deck-preview-wrapper .chosen-suit .card-hover::after{opacity:.8}*{margin:0;padding:0;font-family:'Montserrat', sans-serif;color:#fff}h1,h2,h3,h4,h5,h6{text-align:center;font-family:'Montserrat', sans-serif;font-weight:100}a,i,p{margin:0}p{text-align:justify;text-justify:inter-word}ul{list-style:none;margin:0}ol{margin-bottom:0}body{background:#181f21}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:#181f21}::-webkit-scrollbar-thumb{background:#43565c;border-radius:100px}::-webkit-scrollbar-thumb:hover{background:#58727a}
+/* IMPORTS */
+/* VARIABLES */
+/* MIXING */
+/* QUERIES */
+/*
+  New iPhones viewport
+*/
+/*  Non mobile first for specific scenarios where elements shouldn't be displayed on mobile */
+/*  Mobile Visibility classes */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_header\.scss}line{font-family:\000031}}
+header {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  background: url(../images/deck-packaging.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right; }
+  @media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_header\.scss}line{font-family:\000031}}
+    header {
+      height: 60vh;
+      background-size: contain;
+      background-position: top right; } }
+  @media (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_header\.scss}line{font-family:\000031}}
+    header {
+      height: 100vh; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_header\.scss}line{font-family:\0000318}}
+  header h1, header h2, header h3, header h4, header h5, header h6 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_header\.scss}line{font-family:\0000323}}
+  header #main-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_header\.scss}line{font-family:\0000329}}
+    header #main-title h3 {
+      font-size: 3vw;
+      font-family: 'Cinzel Decorative', cursive; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_header\.scss}line{font-family:\0000334}}
+    header #main-title h1 {
+      font-size: 7vw;
+      font-weight: 200;
+      font-family: 'Cinzel', cursive; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_header\.scss}line{font-family:\0000340}}
+    header #main-title h5 {
+      font-size: 3vw;
+      font-style: italic;
+      font-weight: 100; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_main\.scss}line{font-family:\000032}}
+main .section-odd-even {
+  margin: 0 30px;
+  padding: 60px 0;
+  border-bottom: 1px solid #2d3b3f; }
+  @media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_main\.scss}line{font-family:\000032}}
+    main .section-odd-even {
+      margin: 0 auto;
+      max-width: 600px; } }
+  @media (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_main\.scss}line{font-family:\000032}}
+    main .section-odd-even {
+      margin: 0 auto;
+      max-width: 1000px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_main\.scss}line{font-family:\0000317}}
+  main .section-odd-even:last-child {
+    border: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_main\.scss}line{font-family:\0000322}}
+main .concept {
+  max-width: 800px;
+  margin: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_main\.scss}line{font-family:\0000326}}
+  main .concept p {
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-style: italic;
+    font-family: 'Cinzel', serif;
+    font-size: .8em;
+    text-align: center; }
+    @media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_main\.scss}line{font-family:\0000326}}
+      main .concept p {
+        font-size: 1em;
+        text-align: justify; } }
+    @media (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_main\.scss}line{font-family:\0000326}}
+      main .concept p {
+        font-size: 1.2em; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_main\.scss}line{font-family:\0000343}}
+    main .concept p.signature {
+      margin-top: 10px;
+      font-size: .6em;
+      text-align: right; }
+      @media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_main\.scss}line{font-family:\0000343}}
+        main .concept p.signature {
+          font-size: .8em; } }
+      @media (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_main\.scss}line{font-family:\0000343}}
+        main .concept p.signature {
+          font-size: 1em; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_all-cards\.scss}line{font-family:\000032}}
+main .deck-preview-wrapper {
+  max-width: 800px;
+  margin: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_all-cards\.scss}line{font-family:\000037}}
+  main .deck-preview-wrapper .click-to-preview h1 {
+    font-size: 1em;
+    margin: 0; }
+    @media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_all-cards\.scss}line{font-family:\000037}}
+      main .deck-preview-wrapper .click-to-preview h1 {
+        font-size: 1.5em; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_all-cards\.scss}line{font-family:\0000317}}
+  main .deck-preview-wrapper .suit-picker {
+    margin: 20px auto 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px; }
+    @media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_all-cards\.scss}line{font-family:\0000317}}
+      main .deck-preview-wrapper .suit-picker {
+        grid-gap: 20px;
+        margin: 40px auto 10px; } }
+    @media (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_all-cards\.scss}line{font-family:\0000317}}
+      main .deck-preview-wrapper .suit-picker {
+        grid-gap: 20px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_variables-and-mixins\.scss}line{font-family:\000037}}
+    main .deck-preview-wrapper .suit-picker .single-card {
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 3%, rgba(255, 255, 255, 0)) #181f21;
+      position: relative;
+      border-radius: 5%;
+      transform: perspective(750px);
+      transition: 0.1s ease;
+      cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_variables-and-mixins\.scss}line{font-family:\0000315}}
+      main .deck-preview-wrapper .suit-picker .single-card::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 5%;
+        box-shadow: 0 30px 60px -8px rgba(0, 0, 0, 0.5), 0 18px 36px -10px rgba(0, 0, 0, 0.4), 0 -12px 36px -6px rgba(0, 0, 0, 0.2);
+        transition: .4s ease;
+        opacity: .3; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_variables-and-mixins\.scss}line{font-family:\0000332}}
+      main .deck-preview-wrapper .suit-picker .single-card.unselected img {
+        opacity: 0.5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_variables-and-mixins\.scss}line{font-family:\0000338}}
+    main .deck-preview-wrapper .suit-picker .card-hover {
+      transition-duration: .1s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_variables-and-mixins\.scss}line{font-family:\0000341}}
+      main .deck-preview-wrapper .suit-picker .card-hover::after {
+        opacity: .8; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_all-cards\.scss}line{font-family:\0000333}}
+  main .deck-preview-wrapper .selected-arrow-wrapper {
+    margin: auto;
+    margin-top: -10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    position: relative;
+    z-index: -1; }
+    @media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_all-cards\.scss}line{font-family:\0000333}}
+      main .deck-preview-wrapper .selected-arrow-wrapper {
+        margin-top: 0; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_all-cards\.scss}line{font-family:\0000346}}
+    main .deck-preview-wrapper .selected-arrow-wrapper.hidden-start {
+      display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_all-cards\.scss}line{font-family:\0000350}}
+    main .deck-preview-wrapper .selected-arrow-wrapper .triangle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5em; }
+      @media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_all-cards\.scss}line{font-family:\0000350}}
+        main .deck-preview-wrapper .selected-arrow-wrapper .triangle {
+          font-size: 2em; } }
+      @media (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_all-cards\.scss}line{font-family:\0000350}}
+        main .deck-preview-wrapper .selected-arrow-wrapper .triangle {
+          font-size: 3em; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_all-cards\.scss}line{font-family:\0000364}}
+      main .deck-preview-wrapper .selected-arrow-wrapper .triangle > * {
+        color: #8e8e8e; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_all-cards\.scss}line{font-family:\0000368}}
+      main .deck-preview-wrapper .selected-arrow-wrapper .triangle.hidden {
+        visibility: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_all-cards\.scss}line{font-family:\0000374}}
+  main .deck-preview-wrapper .chosen-suit {
+    margin: 10px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px; }
+    @media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_all-cards\.scss}line{font-family:\0000374}}
+      main .deck-preview-wrapper .chosen-suit {
+        margin: 20px auto 0;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 20px; } }
+    @media (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_all-cards\.scss}line{font-family:\0000374}}
+      main .deck-preview-wrapper .chosen-suit {
+        grid-gap: 20px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_all-cards\.scss}line{font-family:\0000388}}
+    main .deck-preview-wrapper .chosen-suit.hidden {
+      display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_all-cards\.scss}line{font-family:\0000392}}
+    main .deck-preview-wrapper .chosen-suit.hidden-start {
+      visibility: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_variables-and-mixins\.scss}line{font-family:\000037}}
+    main .deck-preview-wrapper .chosen-suit .single-card {
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 3%, rgba(255, 255, 255, 0)) #181f21;
+      position: relative;
+      border-radius: 5%;
+      transform: perspective(750px);
+      transition: 0.1s ease;
+      cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_variables-and-mixins\.scss}line{font-family:\0000315}}
+      main .deck-preview-wrapper .chosen-suit .single-card::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 5%;
+        box-shadow: 0 30px 60px -8px rgba(0, 0, 0, 0.5), 0 18px 36px -10px rgba(0, 0, 0, 0.4), 0 -12px 36px -6px rgba(0, 0, 0, 0.2);
+        transition: .4s ease;
+        opacity: .3; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_variables-and-mixins\.scss}line{font-family:\0000332}}
+      main .deck-preview-wrapper .chosen-suit .single-card.unselected img {
+        opacity: 0.5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_variables-and-mixins\.scss}line{font-family:\0000338}}
+    main .deck-preview-wrapper .chosen-suit .card-hover {
+      transition-duration: .1s; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/_variables-and-mixins\.scss}line{font-family:\0000341}}
+      main .deck-preview-wrapper .chosen-suit .card-hover::after {
+        opacity: .8; }
+
+/* GENERAL STUFF */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/app\.scss}line{font-family:\0000310}}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/app\.scss}line{font-family:\0000317}}
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/app\.scss}line{font-family:\0000323}}
+a, i, p {
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/app\.scss}line{font-family:\0000327}}
+p {
+  text-align: justify;
+  text-justify: inter-word; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/app\.scss}line{font-family:\0000332}}
+ul {
+  list-style: none;
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/app\.scss}line{font-family:\0000337}}
+ol {
+  margin-bottom: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/app\.scss}line{font-family:\0000341}}
+body {
+  background: #181f21; }
+
+/* SCROLL */
+/* width */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/app\.scss}line{font-family:\0000348}}
+::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/app\.scss}line{font-family:\0000353}}
+::-webkit-scrollbar-track {
+  background: #181f21; }
+
+/* Handle */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/app\.scss}line{font-family:\0000358}}
+::-webkit-scrollbar-thumb {
+  background: #43565c;
+  border-radius: 100px; }
+
+/* Handle on hover */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/merda\/OneDrive\/Ambiente\%20de\%20Trabalho\/RuneScape\%20Deck\/RS-Card-Deck\/scss\/app\.scss}line{font-family:\0000364}}
+::-webkit-scrollbar-thumb:hover {
+  background: #58727a; }
+
 /*# sourceMappingURL=app.css.map */
